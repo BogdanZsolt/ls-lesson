@@ -5,11 +5,26 @@
 	"category": "widgets",
 	"icon": "welcome-learn-more",
 	"description": "La Saphire Lesson.",
+	"keywords": ["la", "saphire", "lesson"],
 	"supports": {
 		"html": false
 	},
 	"textdomain": "ls-lesson",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
-	"style": "file:./build/style-index.css"
+	"style": "file:./build/style-index.css",
+	"attributes": {
+		"numberOfPosts": {
+			"type": "number",
+			"default": -1
+		},
+		"order": {
+			"type": "string",
+			"default": "asc"
+		},
+		"orderBy": {
+			"type": "string",
+			"default": "title"
+		}
+	}
 }
